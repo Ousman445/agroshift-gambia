@@ -14,6 +14,7 @@ app = FastAPI(
 )
 
 DATA_FILE = Path(__file__).parent / "data.json"
+FALLBACK_FILE = Path(__file__).parent / "static_fallback.json"
 
 
 class Feature(BaseModel):
@@ -29,7 +30,7 @@ class Feature(BaseModel):
     data_type: str | None = None
     confidence: str = "unassessed"
     notes: str | None = None
-    
+
 
 class Strategy(BaseModel):
     id: str
@@ -57,6 +58,34 @@ class FieldData(BaseModel):
     disclaimer: str
 
 
+def load_field_data(file_path: Path):
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            return json.load(file)
+
+    except FileNotFoundError:
+        raise HTTPException(
+            status_code=500,
+            detail="Field data file is missing"
+        )
+
+    except json.JSONDecodeError:
+        raise HTTPException(
+            status_code=500,
+            detail="Field data contains invalid JSON"
+        )
+
+
+def verify_field_id(field_data: dict, field_id: str):
+    if field_data.get("field_id") != field_id:
+        raise HTTPException(
+            status_code=404,
+            detail="Field not found"
+        )
+
+    return field_data
+
+
 @app.get("/")
 def home():
     return {
@@ -74,26 +103,11 @@ def health_check():
 
 @app.get("/api/v2/fields/{field_id}", response_model=FieldData)
 def get_field(field_id: str):
-    try:
-        with open(DATA_FILE, "r", encoding="utf-8") as file:
-            field_data = json.load(file)
+    field_data = load_field_data(DATA_FILE)
+    return verify_field_id(field_data, field_id)
 
-    except FileNotFoundError:
-        raise HTTPException(
-            status_code=500,
-            detail="Field data file is missing"
-        )
 
-    except json.JSONDecodeError:
-        raise HTTPException(
-            status_code=500,
-            detail="Field data contains invalid JSON"
-        )
-
-    if field_data.get("field_id") != field_id:
-        raise HTTPException(
-            status_code=404,
-            detail="Field not found"
-        )
-
-    return field_data
+@app.get("/api/v2/fallback/{field_id}", response_model=FieldData)
+def get_static_fallback(field_id: str):
+    field_data = load_field_data(FALLBACK_FILE)
+    return verify_field_id(field_data, field_id)
