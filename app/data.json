@@ -1,0 +1,68 @@
+{
+  "field_id": "field-001",
+  "location": {
+    "district": "Demo District",
+    "region": "Demo Region",
+    "country": "The Gambia"
+  },
+  "features": {
+    "rain_total_mm": null,
+    "dry_spell_max_days": null,
+    "dry_spells_ge7d": null,
+    "ndvi_cover_nov_jun": null,
+    "slope_pct": null,
+    "soil_texture": null,
+    "soc": null,
+    "ph": null
+  },
+  "strategies": [
+    {
+      "id": "A",
+      "name": "Strategy A",
+      "score": null,
+      "score_range": null,
+      "confidence": "unassessed",
+      "criteria": [],
+      "sequence": [],
+      "why": "Placeholder pending validated field data.",
+      "evidence": [],
+      "benefits": [],
+      "trade_offs": [],
+      "gaps": [],
+      "risks_for_local_review": []
+    },
+    {
+      "id": "B",
+      "name": "Strategy B",
+      "score": null,
+      "score_range": null,
+      "confidence": "unassessed",
+      "criteria": [],
+      "sequence": [],
+      "why": "Placeholder pending validated field data.",
+      "evidence": [],
+      "benefits": [],
+      "trade_offs": [],
+      "gaps": [],
+      "risks_for_local_review": []
+    },
+    {
+      "id": "C",
+      "name": "Strategy C",
+      "score": null,
+      "score_range": null,
+      "confidence": "unassessed",
+      "criteria": [],
+      "sequence": [],
+      "why": "Placeholder pending validated field data.",
+      "evidence": [],
+      "benefits": [],
+      "trade_offs": [],
+      "gaps": [],
+      "risks_for_local_review": []
+    }
+  ],
+  "weights": {},
+  "constraints": [],
+  "disclaimer": "Demonstration data only. This output is not validated agricultural advice."
+}
