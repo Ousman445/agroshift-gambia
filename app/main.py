@@ -53,7 +53,7 @@ class FieldData(BaseModel):
     features: dict[str, Feature]
     strategies: list[Strategy]
     weights: dict[str, Any]
-    constraints: list[Any]
+    constraints: dict[str, Any]
     disclaimer: str
 
 
