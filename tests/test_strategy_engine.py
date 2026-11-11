@@ -36,11 +36,13 @@ class StrategyEngineTests(unittest.TestCase):
         self.assertIn("limited_pilot_evidence", result["data_quality"]["status"])
 
     def test_custom_weight_normalisation(self):
+        # earlier six-criterion names are still accepted and mapped to the five priorities
         result = recommend_strategies({
             "weights": {"water_resilience": 2, "soil_fertility": 2}
         })
         total = sum(result["weights"].values())
-        self.assertAlmostEqual(total, 1.0, places=6)
+        self.assertAlmostEqual(total, 1.0, places=3)
+        self.assertEqual(set(result["weights"]), {"water", "soil_health", "food", "income", "labour"})
 
     def test_unavailable_required_crop_blocks_strategy(self):
         result = recommend_strategies({
@@ -55,8 +57,9 @@ class StrategyEngineTests(unittest.TestCase):
             "features": {"dry_spell_max_days": {"value": 16, "unit": "days"}}
         })
         strategy_a = next(x for x in result["strategies"] if x["id"] == "A")
-        water = next(x for x in strategy_a["criteria"] if x["name"] == "water_resilience")
+        water = next(x for x in strategy_a["criteria"] if x["name"] == "water")
         self.assertIn("16", water["reason"])
+        self.assertIn("unverified", water["reason"])
 
 
 if __name__ == "__main__":

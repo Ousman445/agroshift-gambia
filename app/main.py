@@ -7,12 +7,14 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from app.strategy_engine import recommend_strategies
+from engine.knowledge_base import load_kb
+from engine.rules import CRITERIA, CRITERION_LABELS, DEFAULT_REQUESTED, ENGINE_VERSION, STRATEGIES
 
 
 app = FastAPI(
     title="AgroShift Gambia API",
     description="Agricultural decision-support API",
-    version="2.1.0",
+    version="2.2.0",
 )
 
 DATA_FILE = Path(__file__).parent / "data.json"
@@ -68,6 +70,7 @@ class StrategyRequest(BaseModel):
     field_context: dict[str, Any] = Field(default_factory=dict)
     weights: dict[str, Any] = Field(default_factory=dict)
     constraints: dict[str, Any] = Field(default_factory=dict)
+    evidence_base: dict[str, Any] | None = None
 
 
 def load_field_data(file_path: Path):
@@ -88,7 +91,7 @@ def verify_field_id(field_data: dict, field_id: str):
 
 @app.get("/")
 def home():
-    return {"message": "AgroShift Gambia API is running", "version": "2.1.0"}
+    return {"message": "AgroShift Gambia API is running", "version": "2.2.0"}
 
 
 @app.get("/health")
@@ -115,3 +118,20 @@ def create_strategies(request: StrategyRequest):
         return recommend_strategies(request.model_dump())
     except (TypeError, ValueError) as exc:
         raise HTTPException(status_code=422, detail=f"Invalid strategy input: {exc}") from exc
+
+
+@app.get("/api/v2/engine")
+def engine_info():
+    """Read-only metadata for the interface: criteria, default priorities, strategies and evidence counts."""
+    kb = load_kb()
+    traits = [t for crop in kb.crops.values() for name, t in crop.items() if not name.startswith("_")]
+    supported = sum(1 for t in traits if t["trait_status"] not in ("assumption", "unknown"))
+    return {
+        "engine_version": ENGINE_VERSION,
+        "criteria": [{"name": c, "label": CRITERION_LABELS[c]} for c in CRITERIA],
+        "default_priorities_0_to_3": DEFAULT_REQUESTED,
+        "strategies": [{"id": s["id"], "kind": s["kind"], "display_name": s["display_name"], "name": s["name"]} for s in STRATEGIES],
+        "crops": sorted(kb.crops),
+        "knowledge_base": {"traits": len(traits), "traits_with_source_or_farmer_report": supported, "sources": len(kb.sources)},
+        "disclaimer": "Heuristic suitability comparison; not a yield or probability prediction.",
+    }
