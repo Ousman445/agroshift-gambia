@@ -19,7 +19,7 @@ app = FastAPI(
 
 DATA_FILE = Path(__file__).parent / "data.json"
 FALLBACK_FILE = Path(__file__).parent / "static_fallback.json"
-
+EVIDENCE_FILE = Path(__file__).parent.parent / "pipeline" / "cache" / "field-001.json"
 
 class Feature(BaseModel):
     value: Any = None
@@ -109,6 +109,11 @@ def get_field(field_id: str):
 def get_static_fallback(field_id: str):
     field_data = load_field_data(FALLBACK_FILE)
     return verify_field_id(field_data, field_id)
+
+@app.get("/api/v2/evidence/{field_id}")
+def get_field_evidence(field_id: str):
+    evidence_data = load_field_data(EVIDENCE_FILE)
+    return verify_field_id(evidence_data, field_id)
 
 
 @app.post("/api/v2/strategies")

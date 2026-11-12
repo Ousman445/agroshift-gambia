@@ -23,6 +23,34 @@ class ExistingEndpointTests(unittest.TestCase):
         status, _ = call(app, "GET", "/api/v2/fields/does-not-exist")
         self.assertEqual(status, 404)
 
+    def test_field_evidence_returns_all_dataset_sections(self):
+        status, body = call(app, "GET", "/api/v2/evidence/field-001")
+
+        self.assertEqual(status, 200)
+        self.assertEqual(body["field_id"], "field-001")
+
+        evidence = body["evidence"]
+        self.assertEqual(
+            set(evidence),
+            {
+                "power_annual",
+                "modis_ndvi_nov_jun_usable",
+                "soilgrids",
+                "srtm_elevation_samples",
+                "smap_monthly_snapshots",
+            },
+        )
+
+        self.assertEqual(len(evidence["power_annual"]), 11)
+        self.assertEqual(len(evidence["modis_ndvi_nov_jun_usable"]), 173)
+        self.assertEqual(len(evidence["soilgrids"]), 24)
+        self.assertEqual(len(evidence["srtm_elevation_samples"]), 9)
+        self.assertEqual(len(evidence["smap_monthly_snapshots"]), 44)
+
+    def test_unknown_evidence_field_is_404(self):
+        status, _ = call(app, "GET", "/api/v2/evidence/unknown-field")
+        self.assertEqual(status, 404)
+
     def test_docs_are_served(self):
         status, _ = call(app, "GET", "/openapi.json")
         self.assertEqual(status, 200)
