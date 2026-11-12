@@ -39,3 +39,31 @@ def validate_field_data(field_data):
             errors.append(f"Missing feature: {feature}")
 
     return errors
+
+
+def validate_request(payload):
+    """Check the shape of a strategy request and return a normalised copy. Raises ValueError for malformed input.
+
+    Missing sections become empty dictionaries; nothing is invented.
+    """
+    if not isinstance(payload, dict):
+        raise ValueError("request body must be an object")
+    out = dict(payload)
+    for key in ("features", "farmer_context", "field_context", "weights", "constraints"):
+        value = out.get(key)
+        if value is None:
+            out[key] = {}
+        elif not isinstance(value, dict):
+            raise ValueError(f"{key} must be an object")
+    for key in ("rotation_history", "crop_history"):
+        value = out["farmer_context"].get(key)
+        if value is not None and not isinstance(value, list):
+            raise ValueError(f"farmer_context.{key} must be a list")
+    for key in ("available_crops", "unavailable_crops", "seed_available", "preferred_crops", "avoided_crops"):
+        value = out["farmer_context"].get(key)
+        if value is not None and not isinstance(value, list):
+            raise ValueError(f"farmer_context.{key} must be a list")
+    seed_access = out["constraints"].get("seed_access")
+    if seed_access is not None and not isinstance(seed_access, dict):
+        raise ValueError("constraints.seed_access must be an object")
+    return out

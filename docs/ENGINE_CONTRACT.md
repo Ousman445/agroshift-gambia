@@ -45,14 +45,16 @@ If important data is missing, the engine must record the limitation rather than 
 
 The engine produces three alternative strategies:
 
-### Strategy A
-A strategy based on the most suitable conditions identified by the available field data.
+### Strategy A (kind `soil_building`)
+Groundnut–maize rotation. Both crops are reported as grown by Manduar farmers, so this is the only option that can be ready without further confirmation.
 
-### Strategy B
-An alternative strategy that considers different field conditions, constraints or management priorities.
+### Strategy B (kind `legume_diversification`)
+Maize–cowpea diversification. Cowpea cultivation and seed access are not confirmed locally, so it is conditional until they are.
 
-### Strategy C
-A third alternative that accounts for additional limitations, uncertainty or risk.
+### Strategy C (kind `water_resilient`)
+Millet (or sorghum) with groundnut. Neither cereal is confirmed locally, so it is conditional until seed access is confirmed.
+
+The farmer's own recorded rotation is returned separately as `reference_rotation` (id `current`) and scored with the same rules for comparison. It is not one of the three strategies.
 
 The exact agricultural practices must be based on the approved crop knowledge base and reviewed rules.
 
@@ -60,20 +62,13 @@ The engine must not invent crop requirements or present unverified practices as 
 
 ## 5. Evaluation Criteria
 
-Strategies may be evaluated using:
+Strategies are scored on the five farmer priorities: `water`, `soil_health`, `food`, `income` and `labour`.
+Weights are configurable per request (see section 13). Rainfall, dry-spell, soil, slope and vegetation information is used as documented evidence and context:
+NASA POWER, GPM IMERG and MODIS describe the area around a field, not the field itself, and gridded soil, slope and NDVI values are shown but never scored.
 
-- Rainfall availability and seasonal distribution.
-- Dry-spell frequency and duration.
-- Soil texture.
-- Soil organic carbon.
-- Soil pH.
-- Slope and terrain conditions.
-- Available vegetation-cover context.
-- Data completeness and confidence.
+The importance assigned to each criterion is documented in `README_ENGINE.md`.
 
-The importance assigned to each criterion must be documented.
-
-Weights should be configurable rather than permanently hardcoded.
+Weights are configurable rather than permanently hardcoded.
 
 ## 6. Expected Output
 
@@ -162,8 +157,22 @@ The engine must clearly communicate missing information, uncertainty and risks r
 
 ## 12. Current Development Status
 
-The current API uses demonstration data.
+`POST /api/v2/strategies` is served by the engine in the `engine/` package (version in `GET /api/v2/engine`).
+The GET field and fallback endpoints still return demonstration data.
 
-The decision engine has not yet been integrated with validated pipeline data.
+The engine uses a sourced crop knowledge base and pilot-point NASA evidence for Manduar (Brikama). The pilot evidence is one farmer interview and five recorded fields.
+Rules, scoring weights and crop traits remain subject to agricultural review; 35 of 102 traits are unsourced assumptions or unknown, and every card is low confidence.
 
-Rules, scoring weights and crop-specific recommendations remain subject to team agreement and agricultural review.
+## 13. Final engine response (v1.0)
+
+Request (all fields optional): `field_id`, `features`, `farmer_context`, `field_context`, `weights`, `constraints`, `evidence_base`.
+
+- `weights`: any of `water`, `soil_health`, `food`, `income`, `labour` (non-negative numbers; unspecified keys keep the pilot default). The earlier names `water_resilience`, `soil_fertility`, `erosion_management`, `food_security`, `economic_fit` and `practicality` are still accepted and mapped. Output weights always use the five keys and sum to 1.
+- `farmer_context.priorities`: the farmer's own selection; unspecified priorities then count as 0. `weights` takes precedence.
+- `farmer_context.rotation_history` (or `crop_history`): list of `{year, crop}`; produces `reference_rotation`.
+- Seed: `farmer_context.available_crops` / `seed_available` / `unavailable_crops` and `constraints.seed_access` (`{crop: available|easy|limited|unavailable|none}`). Groundnut and maize count as available unless reported otherwise; other crops are unknown until confirmed.
+- Limits: `constraints.budget_available`, `farmer_context.cash_available` (`none|low|medium|high`), `constraints.labour_available`, `farmer_context.labour` (`family_only|can_hire`), `constraints.dry_season_water`, `constraints.post_harvest_grazing`.
+
+Response additions (existing keys are unchanged): per strategy `kind`, `display_name`, `status_note`, `suitability_index`, `confidence_detail`, `evidence_items`, `soil_health_components`, `rotation_effects`, `constraints.conditions`, `constraints.would_become_feasible_if`; top level `engine_version`, `reference_rotation`, `suggestion`, `weights_requested`, `weights_source`, `warnings`, `evidence_base`, `climate_evidence`, `not_evaluated`.
+
+Changes from the earlier engine: `score` and `score_range` remain on a 0-100 scale, but the range is now a sensitivity range, not a fixed band; criteria names are the five priorities; `confidence` stays `low`, `moderate` or `high` (never `high` in the pilot); a strategy with an open condition is `conditional_candidate`, not a ready recommendation, and is sorted after ready options.
