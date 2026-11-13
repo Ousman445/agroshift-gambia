@@ -21,7 +21,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://remix-agroshift-gambia-8001.ai.studio"
+        "https://remix-agroshift-gambia-8001.ai.studio",
+        "https://agroshift.vercel.app",
     ],
     allow_credentials=False,
     allow_methods=["*"],
