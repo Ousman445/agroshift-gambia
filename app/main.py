@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Any
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from app.strategy_engine import recommend_strategies
@@ -15,6 +16,16 @@ app = FastAPI(
     title="AgroShift Gambia API",
     description="Agricultural decision-support API",
     version="2.2.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://remix-agroshift-gambia-8001.ai.studio"
+    ],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 DATA_FILE = Path(__file__).parent / "data.json"
