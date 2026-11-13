@@ -28,7 +28,9 @@ const VALID_PROD_API_URL =
 // In Vite development mode, always use relative URLs (/health, /api/v2/...) so requests pass
 // through the local Vite dev proxy without triggering browser CORS restrictions.
 // In production builds, honor a valid VITE_API_URL if configured, or fall back to relative URLs.
-export const API_BASE_URL = import.meta.env.DEV ? '' : VALID_PROD_API_URL;
+export const API_BASE_URL = import.meta.env.DEV
+  ? ''
+  : (VALID_PROD_API_URL || 'https://agroshift-gambia.onrender.com');
 
 export class ApiError extends Error {
   status?: number;
