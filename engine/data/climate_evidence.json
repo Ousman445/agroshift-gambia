@@ -1,0 +1,312 @@
+{
+ "reference_period": "2015-2025",
+ "excluded": [
+  {
+   "item": "imerg_2026",
+   "reason": "IMERG in POWER ends 14 Sep 2026 (47 days missing); the 2026 season is not ranked"
+  }
+ ],
+ "rainfall": {
+  "season_window": "06-01/10-31",
+  "last_complete_season": 2025,
+  "sources": {
+   "merra2": {
+    "class": "low",
+    "status": "valid",
+    "dataset": "NASA POWER MERRA-2 PRECTOTCORR",
+    "resolution": "0.5 x 0.625 deg",
+    "data_type": "modelled"
+   },
+   "imerg": {
+    "class": "typical",
+    "status": "valid",
+    "dataset": "GPM IMERG via NASA POWER",
+    "resolution": "0.1 deg",
+    "data_type": "satellite_based"
+   }
+  },
+  "agreement": "adjacent",
+  "agreement_summary": {
+   "same": 7,
+   "adjacent": 4
+  },
+  "by_year": [
+   {
+    "year": 2015,
+    "class_merra2": "typical",
+    "class_imerg": "high",
+    "agreement": "adjacent"
+   },
+   {
+    "year": 2016,
+    "class_merra2": "low",
+    "class_imerg": "low",
+    "agreement": "same"
+   },
+   {
+    "year": 2017,
+    "class_merra2": "high",
+    "class_imerg": "typical",
+    "agreement": "adjacent"
+   },
+   {
+    "year": 2018,
+    "class_merra2": "low",
+    "class_imerg": "low",
+    "agreement": "same"
+   },
+   {
+    "year": 2019,
+    "class_merra2": "low",
+    "class_imerg": "low",
+    "agreement": "same"
+   },
+   {
+    "year": 2020,
+    "class_merra2": "high",
+    "class_imerg": "high",
+    "agreement": "same"
+   },
+   {
+    "year": 2021,
+    "class_merra2": "typical",
+    "class_imerg": "low",
+    "agreement": "adjacent"
+   },
+   {
+    "year": 2022,
+    "class_merra2": "high",
+    "class_imerg": "high",
+    "agreement": "same"
+   },
+   {
+    "year": 2023,
+    "class_merra2": "typical",
+    "class_imerg": "typical",
+    "agreement": "same"
+   },
+   {
+    "year": 2024,
+    "class_merra2": "high",
+    "class_imerg": "high",
+    "agreement": "same"
+   },
+   {
+    "year": 2025,
+    "class_merra2": "low",
+    "class_imerg": "typical",
+    "agreement": "adjacent"
+   }
+  ],
+  "note": "Classes are terciles of the 11 seasons 2015-2025 for each product. Absolute totals are not shown to farmers."
+ },
+ "dry_spells": {
+  "window": "07-01/09-30",
+  "dry_day_threshold_mm": 1.0,
+  "threshold_status": "implemented_pending_verification",
+  "basis": "imerg_only",
+  "merra2": {
+   "status": "not_used",
+   "reason": "MERRA-2 records at least 1 mm of rain on about 90% of Jul-Sep days, so it cannot resolve dry spells",
+   "max_consecutive_dry_days": null,
+   "spells_ge_7_days": null
+  },
+  "imerg": {
+   "status": "valid",
+   "seasons": 11,
+   "seasons_with_spell_ge_7_days": 3,
+   "share_of_seasons_with_spell_ge_7_days": 0.273,
+   "longest_dry_spell_days_any_season": 10,
+   "by_year": [
+    {
+     "year": 2015,
+     "longest_dry_spell_days": 6,
+     "spells_ge_7_days": 0
+    },
+    {
+     "year": 2016,
+     "longest_dry_spell_days": 5,
+     "spells_ge_7_days": 0
+    },
+    {
+     "year": 2017,
+     "longest_dry_spell_days": 7,
+     "spells_ge_7_days": 1
+    },
+    {
+     "year": 2018,
+     "longest_dry_spell_days": 5,
+     "spells_ge_7_days": 0
+    },
+    {
+     "year": 2019,
+     "longest_dry_spell_days": 10,
+     "spells_ge_7_days": 2
+    },
+    {
+     "year": 2020,
+     "longest_dry_spell_days": 4,
+     "spells_ge_7_days": 0
+    },
+    {
+     "year": 2021,
+     "longest_dry_spell_days": 8,
+     "spells_ge_7_days": 1
+    },
+    {
+     "year": 2022,
+     "longest_dry_spell_days": 4,
+     "spells_ge_7_days": 0
+    },
+    {
+     "year": 2023,
+     "longest_dry_spell_days": 3,
+     "spells_ge_7_days": 0
+    },
+    {
+     "year": 2024,
+     "longest_dry_spell_days": 4,
+     "spells_ge_7_days": 0
+    },
+    {
+     "year": 2025,
+     "longest_dry_spell_days": 4,
+     "spells_ge_7_days": 0
+    }
+   ]
+  },
+  "range": null,
+  "note": "Results depend strongly on the dry-day threshold; a rain-gauge record is needed to arbitrate.",
+  "exposure_by_threshold": {
+   "1.0": 0.273,
+   "2.0": 0.273,
+   "5.0": 0.727,
+   "note": "Share of the 11 seasons 2015-2025 with at least one dry spell of 7 or more days in July-September (GPM IMERG via NASA POWER), at three dry-day thresholds in mm. The threshold is unverified, so all three are used in the sensitivity range."
+  },
+  "primary_threshold_mm": "1.0"
+ },
+ "ndvi_context": {
+  "dataset": "MODIS MOD13Q1 V6.1",
+  "resolution": "250 m (about 5-6 ha per pixel), 16-day",
+  "data_type": "satellite_observed",
+  "quality_rule": "reliability_0_only",
+  "dec_may": {
+   "status": "valid",
+   "mean_ndvi": 0.34
+  },
+  "june": {
+   "status": "valid",
+   "mean_ndvi": 0.28,
+   "role": "transition"
+  },
+  "november": {
+   "status": "valid",
+   "mean_ndvi": 0.5,
+   "role": "transition"
+  },
+  "sparsest_cover_window": "March-May",
+  "no_reliable_view_months": [
+   7,
+   8,
+   9
+  ],
+  "monthly": [
+   {
+    "month": 1,
+    "good_composites": 23,
+    "composites": 24,
+    "good_share": 0.96,
+    "mean_ndvi_good_only": 0.38,
+    "reliable_view": true
+   },
+   {
+    "month": 2,
+    "good_composites": 23,
+    "composites": 24,
+    "good_share": 0.96,
+    "mean_ndvi_good_only": 0.35,
+    "reliable_view": true
+   },
+   {
+    "month": 3,
+    "good_composites": 23,
+    "composites": 24,
+    "good_share": 0.96,
+    "mean_ndvi_good_only": 0.32,
+    "reliable_view": true
+   },
+   {
+    "month": 4,
+    "good_composites": 22,
+    "composites": 24,
+    "good_share": 0.92,
+    "mean_ndvi_good_only": 0.29,
+    "reliable_view": true
+   },
+   {
+    "month": 5,
+    "good_composites": 22,
+    "composites": 24,
+    "good_share": 0.92,
+    "mean_ndvi_good_only": 0.27,
+    "reliable_view": true
+   },
+   {
+    "month": 6,
+    "good_composites": 9,
+    "composites": 24,
+    "good_share": 0.38,
+    "mean_ndvi_good_only": 0.28,
+    "reliable_view": false
+   },
+   {
+    "month": 7,
+    "good_composites": 2,
+    "composites": 24,
+    "good_share": 0.08,
+    "mean_ndvi_good_only": 0.39,
+    "reliable_view": false
+   },
+   {
+    "month": 8,
+    "good_composites": 2,
+    "composites": 24,
+    "good_share": 0.08,
+    "mean_ndvi_good_only": 0.73,
+    "reliable_view": false
+   },
+   {
+    "month": 9,
+    "good_composites": 11,
+    "composites": 24,
+    "good_share": 0.46,
+    "mean_ndvi_good_only": 0.72,
+    "reliable_view": false
+   },
+   {
+    "month": 10,
+    "good_composites": 13,
+    "composites": 15,
+    "good_share": 0.87,
+    "mean_ndvi_good_only": 0.63,
+    "reliable_view": true
+   },
+   {
+    "month": 11,
+    "good_composites": 18,
+    "composites": 19,
+    "good_share": 0.95,
+    "mean_ndvi_good_only": 0.5,
+    "reliable_view": true
+   },
+   {
+    "month": 12,
+    "good_composites": 22,
+    "composites": 22,
+    "good_share": 1.0,
+    "mean_ndvi_good_only": 0.41,
+    "reliable_view": true
+   }
+  ]
+ }
+}

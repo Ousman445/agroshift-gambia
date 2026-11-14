@@ -1,0 +1,1153 @@
+{
+ "version": "1.0",
+ "built": "2026-11-10",
+ "sources": {
+  "VISIT-01": {
+   "type": "farmer_reported",
+   "region": "Gambia",
+   "cite": "Alhassan Sowe field visit, Manduar (Brikama), 8 Nov 2026: 1 farmer interviewed, 7 fields seen, 5 recorded.",
+   "url": ""
+  },
+  "IMERG-POWER": {
+   "type": "satellite_observed",
+   "region": "Manduar",
+   "cite": "GPM IMERG daily precipitation retrieved through the NASA POWER API at the pilot point, 2015-2025; dry day = below 1.0 mm; July-September window.",
+   "url": "https://power.larc.nasa.gov/"
+  },
+  "MERRA2-POWER": {
+   "type": "satellite_modelled",
+   "region": "Manduar",
+   "cite": "NASA POWER MERRA-2 PRECTOTCORR at the pilot point, 2015-2025 (0.5 x 0.625 degree).",
+   "url": "https://power.larc.nasa.gov/"
+  },
+  "MODIS-NDVI": {
+   "type": "satellite_observed",
+   "region": "Manduar",
+   "cite": "MODIS MOD13Q1 250 m NDVI, good-quality composites only (reliability 0), 2015-2026, via the ORNL DAAC MODIS web service.",
+   "url": "https://modis.ornl.gov/"
+  },
+  "GIEWS25": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "FAO GIEWS Country Brief, The Gambia, 22 May 2025: maize planting starts late May; rice, millet and sorghum planting begins June with the seasonal rains.",
+   "url": "https://www.fao.org/giews/countrybrief/country/GMB/pdf/GMB.pdf"
+  },
+  "GIEWS25B": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "FAO GIEWS Country Brief, The Gambia, Feb 2025 (archive): maize harvested from September; rice, millet and sorghum harvested October to November.",
+   "url": "https://www.fao.org/giews/countrybrief/country/GMB/pdf_archive/GMB_Archive.pdf"
+  },
+  "GIEWS26": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "FAO GIEWS Country Brief, The Gambia, 28 Jan 2026: 2025 cereal harvest completed Dec 2025; heavy Aug-Sep rain caused flooding and delayed harvests; local maize prices are monitored.",
+   "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=GMB"
+  },
+  "GIEWS02": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "FAO/GIEWS Africa Report No. 3, Dec 2002, p.33: groundnut, the main cash crop, fell by more than half in 2002 after a 3-5 week dry spell from late June to early August reduced the area planted.",
+   "url": "https://www.fao.org/4/Y8255E/y8255e33.htm"
+  },
+  "GIEWS97": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "FAO/GIEWS Foodcrops and Shortages, The Gambia, 20 Nov 1997: rain stopped in mid-July, stressing early maize and millet; virtually all maize was lost despite rain returning in mid-August; aphid damage to millet and groundnut; Striga upsurge; downy mildew on maize and millet.",
+   "url": "https://www.fao.org/4/W7447E/pays/gam9712e.htm"
+  },
+  "MWG16": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "Gambia National Multidisciplinary Working Group, Early Warning Bulletin 2016/16 (1-10 Oct 2016): 'Philippine pink' groundnut harvested across the country in early October; other varieties vary by variety and sowing date.",
+   "url": "https://wamis.org/wamis/wp-content/uploads/2023/05/Oct_1_2016.pdf"
+  },
+  "MWG18": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "Gambia National Multidisciplinary Working Group, Early Warning Bulletin 2018/15 (21-30 Sep 2018): weaver birds (Quelea quelea) attack mainly rice and early millet; farmers bird-scare from early morning to late evening; blister beetle damages early millet, notably in West Coast Region.",
+   "url": "https://wamis.org/wamis/wp-content/uploads/2023/05/Sep_3_2018.pdf"
+  },
+  "BAG00": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Bagayoko, Buerkert, Lung, Bationo, Roemheld (2000) Plant and Soil 218:103-116, doi 10.1023/A:1014957605852 (Niger and Burkina Faso): legume/cereal rotations increased cereal yields at all sites; topsoil mineral N was higher after legumes, more so after groundnut than cowpea; nematodes were lower in rotation sorghum than continuous sorghum.",
+   "url": "https://hub.ifdc.org/handle/20.500.14297/2975"
+  },
+  "BAG01": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Bagayoko, Alvey, Bationo (2001) Causes of legume-rotation effects in increasing cereal yields across the Sudanian, Sahelian and Guinean zone of West Africa: after groundnut, rotation cereals gained 26-85% total dry matter vs continuous cereals in year 4; cowpea effects on millet were much smaller.",
+   "url": "https://kobra.uni-kassel.de/items/1f03e472-e203-40e8-ac44-f1f22dbeff73/full"
+  },
+  "BUE02": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Buerkert, Piepho, Bationo (2002) multi-site time-trend analysis of soil fertility management, West Africa (510-1300 mm rain, sandy soils): legume-rotation effects tended to increase over time but were strongly species-dependent.",
+   "url": "https://core.ac.uk/download/211013561.pdf"
+  },
+  "JAS00": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Journal of Agricultural Science, Cambridge 134:277-284 (2000), doi 10.1017/S0021859699007650 (sandy soil, semi-arid West Africa): continuous pearl millet yielded less than legume-millet rotations; legume yields were consistently lower in monoculture than when rotated with millet; organic matter declined under continuous millet and under cowpea-millet and groundnut-millet rotations.",
+   "url": "https://doi.org/10.1017/S0021859699007650"
+  },
+  "ADE-GJAS": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "Adetumbi et al., Ghana Journal of Agricultural Science 55(2), doi 10.4314/gjas.v55i2.5 (60 seed growers, 26 Gambian communities): groundnut is the principal export crop (about 66% of agricultural export earnings); the seed system is predominantly informal; Fleur-11 is among the most promising varieties.",
+   "url": "https://core.ac.uk/download/478275724.pdf"
+  },
+  "GGP": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "West Africa Groundnut Germplasm Project, third annual report (regional): 100-120 kg of pods are needed to sow one hectare; farmers struggle to keep seed through the season; foliar diseases and rosette are common constraints; about 30% of production is eaten at home and 60% traded.",
+   "url": "https://agritrop.cirad.fr/300552/1/ID300552.pdf"
+  },
+  "MEDWIN": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "Improved Maize Varieties: Enhancing Food Security in Rural Communities of Central River Region North (Gambia), doi 10.23880/fsnt-16000339: Gambian agriculture is rain-fed; improved maize varieties supplied to smallholders mature in about 85 days (Kabamano 80-100 days).",
+   "url": "https://medwinpublishers.com/article/FSNT/10.23880/fsnt-16000339/full"
+  },
+  "CSA18": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "FAO, ICRISAT, CIAT (2018) Climate-Smart Agriculture in the Gambia, CSA Country Profiles for Africa: rain-fed low-input systems; fertiliser use about 6 kg/ha, about half the West Africa average; soils poor in organic matter with runoff and erosion; land share millet 24%, groundnut 23%, rice 15%, maize 8%, sorghum 7%, pulses and vegetables under 1%; rice, sorghum, millet and maize mostly for home use; groundnut the major cash crop; millet in the Sahelian zone only intermittently because of bird damage; legume rotation, composting and groundnut IPM listed as climate-smart practices.",
+   "url": "https://www.fao.org/3/CA1673EN/ca1673en.pdf"
+  },
+  "BADU": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Badu-Apraku et al. (IITA preprint 202002.0409): maize in West and Central Africa is constrained by drought, low soil N and Striga; extra-early (85-90 days) and early (90-95 days) hybrids exist; maize responds strongly to N.",
+   "url": "https://preprints.org/manuscript/202002.0409/v1/download"
+  },
+  "MENKIR": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Menkir A. (Cambridge University Press, online 5 Feb 2009) Response of early maturing maize landraces and improved varieties to moisture deficit: early maturity helps escape drought, but yield losses can be large if drought occurs from just before flowering to the start of grain filling.",
+   "url": ""
+  },
+  "GHANA25": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Springer s44372-025-00370-6 (Ghana, 2025): nitrogen is the most limiting macronutrient for maize; yield rose with N rates up to 120 kg N/ha; N use efficiency is often low.",
+   "url": "https://link.springer.com/article/10.1007/s44372-025-00370-6"
+  },
+  "SINGH": {
+   "type": "published_research",
+   "region": "Africa",
+   "cite": "Singh B.B., Indian Journal of Genetics and Plant Breeding 76(4): cowpea is inherently tolerant of drought and heat and fixes nitrogen in poor soils; 60-75 day varieties are released in 45+ countries; thrips and Maruca are major pests in sub-Saharan Africa; Striga in Sahel and savanna, Alectra in Guinea and Sudan savannas.",
+   "url": "https://isgpb.org/journal/index.php/IJGPB/article/download/221/1990"
+  },
+  "ELEWA08": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Elewa, J. Applied Biosciences 10(2), 2008: cowpea can fix about 60-70 kg N/ha for the following crop (literature value, site dependent); phosphorus is limiting in many tropical soils.",
+   "url": "https://elewa.org/JABS/2008/10(2)/1.pdf"
+  },
+  "FTF23": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Feed the Future Innovation Lab for Legume Systems Research, final report Dec 2023: smallholder cowpea yields in West Africa are typically 10-20% of potential because of insect pests, pathogens, parasites and drought; early released varieties mature in about 65-70 days.",
+   "url": "https://www.canr.msu.edu/resources/final-report-development-of-market-driven-improved-cowpea-varieties-for-west-africa-using-mature-markers"
+  },
+  "ABDOU-NIGER": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Abdou S., INRAN Niger, J. Applied Biosciences: early cowpea lines average 61.6 days to 50% maturity; early maturity lets cowpea escape terminal drought and late-season insects; fodder is also produced.",
+   "url": "https://ajol.info/index.php/jab/article/view/233343/220406"
+  },
+  "TROPFOR": {
+   "type": "published_research",
+   "region": "Africa",
+   "cite": "Tropical Forages fact sheet, Cenchrus americanus (pearl millet): perhaps the most drought-tolerant grain species; best on sandy or light loam soils; maturity mostly 75-180 days; straw has uses as bedding, thatching, fencing and fuel.",
+   "url": "https://apps.lucidcentral.org/tropical_forages/pdf/cenchrus_americanus.pdf"
+  },
+  "IRD": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "IRD study, Sine-Saloum (Senegal): early millet 'Souna' cycle about 95 days when sown in the first 10 days of June, about 85 days when sown in late July; sandy 'dior' soils are easy to work but have mediocre moisture retention and fertility.",
+   "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers19-05/010074987.pdf"
+  },
+  "PMREV14": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Pearl millet production practices in semi-arid West Africa: a review, Experimental Agriculture (2014): millet is grown on predominantly sandy soils; Striga build-up is linked to low fertility, drought and continuous planting of millet and other host cereals.",
+   "url": ""
+  },
+  "CRM22": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Climate Risk Management 36 (2022) 100436 (Senegal): early planting (1-10 June) improved sorghum, millet and groundnut yields at 9 locations; millet performed better than sorghum or groundnut under a mid-century climate scenario.",
+   "url": "https://pdf.usaid.gov/pdf_docs/PA00ZNDW.pdf"
+  },
+  "FARMPEDIA": {
+   "type": "published_research",
+   "region": "Africa",
+   "cite": "Edross S. (2025) Sesame as a drought-resistant crop, Farmpedia (University of Guelph): early types mature in 95-110 days; flowering from 35-45 days after planting; shattering and seed loss if left standing.",
+   "url": "https://farmpedia.org/Chapters_5.72"
+  },
+  "SESAME-REV": {
+   "type": "published_research",
+   "region": "general",
+   "cite": "Review of sesame production (encyclopedia.pub entry 66936): nearly all varieties shatter; manual harvest raises costs; pre-harvest losses up to 50% reported; drought at vegetative and flowering stages limits yield.",
+   "url": "https://encyclopedia.pub/entry/history/show/66936"
+  },
+  "AUBEE02": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "Aubee E. and Hussein K. (2002) Emergency relief, crop diversification and institution building: the case of sesame in The Gambia, Disasters 26(3), doi 10.1111/1467-7717.00213 (abstract read): a Catholic Relief Services sesame programme in The Gambia ran for more than 25 years.",
+   "url": "https://zendy.io/title/10.1111/1467-7717.00213"
+  },
+  "AFLA-PREP": {
+   "type": "published_research",
+   "region": "West Africa",
+   "cite": "Ghana groundnut aflatoxin review (preprint 202407.2235): hazards include rain at harvest and drying, drying on bare ground, storing on bare floor and long delays before stripping; traditional harvest, drying and shelling are labour-intensive; haulm is in high demand as livestock feed.",
+   "url": "https://www.preprints.org/manuscript/202407.2235"
+  },
+  "POINT22": {
+   "type": "news",
+   "region": "Gambia",
+   "cite": "The Point (Gambia), 5 Sep 2022: aflatoxin has lowered the value of Gambian groundnut exports; an official said groundnut is banned in Europe and goes to China as feed; an official also said fertiliser is costly and some farmers cannot afford it.",
+   "url": "https://thepoint.gm/africa/gambia/headlines/gambias-groundnut-trade-value-depreciates-due-to-aflatoxin"
+  },
+  "HAULM26": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "Adewuyi, Camara, Dauda (2026) Groundnut haulm as livestock feed and its marketing in Kanifing Municipality and Brikama, The Gambia (106 respondents at Abuko and Brikama Kraal markets): haulm is traded as feed (78.6% of traders mix it with wheat bran) with constraints of price, transport, storage and season.",
+   "url": "https://njap.org.ng/index.php/njap/article/view/9146"
+  },
+  "UMN": {
+   "type": "published_research",
+   "region": "Africa",
+   "cite": "IAPRI/UMN working paper 78 (Zambia): relative to maize, groundnuts are more labour intensive, especially for weeding, harvesting and shelling.",
+   "url": "https://ageconsearch.umn.edu/record/171869/files/wp78.pdf"
+  },
+  "JFP": {
+   "type": "published_research",
+   "region": "Gambia",
+   "cite": "Journal of Food Protection (White Rose eprint 111288): earlier Gambian research found high aflatoxin in groundnut-based sauces; contamination is typically higher in dry-season storage; fertilisation, insect control, drying and sorting reduce it.",
+   "url": "https://eprints.whiterose.ac.uk/id/eprint/111288/1/0362-028x.jfp-16-152.pdf"
+  }
+ },
+ "crops": {
+  "groundnut": {
+   "crop_group": {
+    "value": "legume",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BAG00"
+    ],
+    "note": ""
+   },
+   "water_requirement": {
+    "value": "medium",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Needs a local source (NARI or extension)."
+   },
+   "drought_tolerance": {
+    "value": "medium",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "GIEWS02"
+    ],
+    "note": "A 3-5 week dry spell in late June to early August 2002 cut national groundnut output by more than half, mainly by reducing the area planted."
+   },
+   "nitrogen_fixing": {
+    "value": "yes",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BAG00",
+     "BAG01"
+    ],
+    "note": "Topsoil mineral N was higher after groundnut than after cowpea in West African trials."
+   },
+   "nutrient_demand": {
+    "value": "low",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Legume; local fertiliser and phosphorus needs still to be sourced."
+   },
+   "ground_cover_erosion": {
+    "value": "medium",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Needs a source. Lifting the crop at harvest disturbs the soil; to confirm."
+   },
+   "household_food_use": {
+    "value": "protein_oil_cash",
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01",
+     "CSA18"
+    ],
+    "note": "Manduar farmers grow groundnut for family need and market; it is the major cash crop nationally."
+   },
+   "market_access": {
+    "value": "easy",
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01"
+    ],
+    "note": "Sold in the local market and to traders. Export value is hurt by aflatoxin (POINT22)."
+   },
+   "input_cost": {
+    "value": "medium",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "GGP",
+     "VISIT-01"
+    ],
+    "note": "100-120 kg of pods are needed per hectare for seed; Manduar farmers use own saved seed or buy at market."
+   },
+   "labour_demand": {
+    "value": "high",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "UMN",
+     "AFLA-PREP"
+    ],
+    "note": "Weeding, harvesting, drying and shelling are labour-intensive."
+   },
+   "residue_livestock_value": {
+    "value": "yes",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "HAULM26",
+     "VISIT-01"
+    ],
+    "note": "Haulm is sold as feed in Brikama markets; animals graze fields after harvest in Manduar."
+   },
+   "seed_availability": {
+    "value": "easy",
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01"
+    ],
+    "note": "Own saved seed or market. The seed system is informal (ADE-GJAS), so quality is a risk."
+   },
+   "planting_months": {
+    "value": [
+     7
+    ],
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01",
+     "GIEWS02"
+    ],
+    "note": "Manduar farmer: late July. Planting is rain-dependent; late June to early August dry spells can delay it (GIEWS02)."
+   },
+   "harvest_months": {
+    "value": [
+     10,
+     11
+    ],
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01",
+     "MWG16"
+    ],
+    "note": "Early November in Manduar; 'Philippine pink' types are harvested in early October nationally."
+   },
+   "pests_diseases": {
+    "value": "leaf spot and rosette (regional), aphids, aflatoxin in storage",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "GGP",
+     "GIEWS97",
+     "JFP"
+    ],
+    "note": ""
+   },
+   "good_after": {
+    "value": [
+     "maize",
+     "millet",
+     "sorghum"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BAG00",
+     "JAS00"
+    ],
+    "note": "Legumes yielded less in monoculture than when rotated with a cereal (millet) on sandy soil."
+   },
+   "avoid_after": {
+    "value": [
+     "groundnut"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "JAS00"
+    ],
+    "note": "Repeated groundnut: legume yields were consistently lower in monoculture."
+   },
+   "_meta": {
+    "locally_confirmed": true,
+    "note": "Reported as grown by Manduar farmers (VISIT-01)."
+   },
+   "n_credit": {
+    "value": 1.0,
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BAG00",
+     "BAG01"
+    ],
+    "note": "Reference: rotation effect on mineral N was larger after groundnut than cowpea."
+   }
+  },
+  "maize": {
+   "crop_group": {
+    "value": "cereal",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "water_requirement": {
+    "value": "high",
+    "trait_status": "assumption",
+    "source_ids": [
+     "GIEWS97"
+    ],
+    "note": "Local evidence of drought vulnerability exists (GIEWS97) but a water requirement figure is still needed."
+   },
+   "drought_tolerance": {
+    "value": "low",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "GIEWS97",
+     "MENKIR"
+    ],
+    "note": "In 1997 rain stopped in mid-July and virtually all maize was lost even though rain returned in mid-August. The stage from just before flowering to early grain filling is the most sensitive."
+   },
+   "nitrogen_fixing": {
+    "value": "no",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "nutrient_demand": {
+    "value": "high",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "GHANA25",
+     "BADU",
+     "VISIT-01"
+    ],
+    "note": "Nitrogen is the most limiting nutrient; Manduar farmers buy urea."
+   },
+   "ground_cover_erosion": {
+    "value": "medium",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Needs a source."
+   },
+   "household_food_use": {
+    "value": "staple",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": "Maize is mostly produced for home use in The Gambia."
+   },
+   "market_access": {
+    "value": "limited",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18",
+     "GIEWS26"
+    ],
+    "note": "Mostly grown for home use; local maize prices exist. Manduar farmers did not name maize as a main market crop."
+   },
+   "input_cost": {
+    "value": "high",
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01",
+     "POINT22",
+     "CSA18"
+    ],
+    "note": "Farmers reported urea at about GMD 2,000 (unit to confirm); fertiliser is costly and use is low."
+   },
+   "labour_demand": {
+    "value": "medium",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Needs a source."
+   },
+   "residue_livestock_value": {
+    "value": "yes",
+    "trait_status": "assumption",
+    "source_ids": [
+     "VISIT-01"
+    ],
+    "note": "Animals graze fields after harvest in Manduar; stover value to confirm."
+   },
+   "seed_availability": {
+    "value": "easy",
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01"
+    ],
+    "note": "Own saved seed or market. Improved early varieties are supplied through projects (MEDWIN)."
+   },
+   "planting_months": {
+    "value": [
+     7
+    ],
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01",
+     "GIEWS25"
+    ],
+    "note": "Manduar: July. Nationally planting starts from late May."
+   },
+   "harvest_months": {
+    "value": [
+     9,
+     10
+    ],
+    "trait_status": "farmer_reported",
+    "source_ids": [
+     "VISIT-01",
+     "GIEWS25B"
+    ],
+    "note": "Manduar: October. Nationally harvest starts in September."
+   },
+   "pests_diseases": {
+    "value": "Striga, downy mildew, drought at flowering",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BADU",
+     "GIEWS97"
+    ],
+    "note": ""
+   },
+   "good_after": {
+    "value": [
+     "groundnut",
+     "cowpea"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BAG00",
+     "BAG01"
+    ],
+    "note": "Cereals grew better after groundnut in West African trials (millet and sorghum were tested; maize is assumed similar)."
+   },
+   "avoid_after": {
+    "value": [
+     "maize"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "JAS00",
+     "PMREV14"
+    ],
+    "note": "Continuous cereals yielded less and can build up Striga."
+   },
+   "_meta": {
+    "locally_confirmed": true,
+    "note": "Reported as grown by Manduar farmers (VISIT-01)."
+   }
+  },
+  "millet": {
+   "crop_group": {
+    "value": "cereal",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "water_requirement": {
+    "value": "low",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "TROPFOR"
+    ],
+    "note": ""
+   },
+   "drought_tolerance": {
+    "value": "high",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "TROPFOR",
+     "CRM22"
+    ],
+    "note": "Still lost part of the crop in the 1997 mid-July stop (GIEWS97)."
+   },
+   "nitrogen_fixing": {
+    "value": "no",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "nutrient_demand": {
+    "value": "low",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Best on sandy or light soils (TROPFOR); fertiliser need not sourced."
+   },
+   "ground_cover_erosion": {
+    "value": "low",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Needs a source."
+   },
+   "household_food_use": {
+    "value": "staple",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "market_access": {
+    "value": "limited",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Needs a local source."
+   },
+   "input_cost": {
+    "value": "low",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": "Low-input systems."
+   },
+   "labour_demand": {
+    "value": "high",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "MWG18"
+    ],
+    "note": "Farmers bird-scare from early morning to late evening; harvest and threshing add labour."
+   },
+   "residue_livestock_value": {
+    "value": "yes",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "TROPFOR"
+    ],
+    "note": ""
+   },
+   "seed_availability": {
+    "value": "unknown",
+    "trait_status": "unknown",
+    "source_ids": [],
+    "note": "Farmers said they would consider millet; seed access not yet confirmed."
+   },
+   "planting_months": {
+    "value": [
+     6,
+     7
+    ],
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "GIEWS25"
+    ],
+    "note": ""
+   },
+   "harvest_months": {
+    "value": [
+     10,
+     11
+    ],
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "GIEWS25B"
+    ],
+    "note": ""
+   },
+   "pests_diseases": {
+    "value": "Quelea birds, blister beetle, downy mildew, Striga",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "MWG18",
+     "GIEWS97",
+     "PMREV14"
+    ],
+    "note": ""
+   },
+   "good_after": {
+    "value": [
+     "groundnut",
+     "cowpea"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BAG00",
+     "BAG01"
+    ],
+    "note": ""
+   },
+   "avoid_after": {
+    "value": [
+     "millet",
+     "sorghum",
+     "maize"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "PMREV14",
+     "JAS00"
+    ],
+    "note": "Continuous cereals: lower yield and Striga build-up."
+   },
+   "_meta": {
+    "locally_confirmed": false,
+    "note": "Not yet confirmed as grown or available in Manduar."
+   }
+  },
+  "cowpea": {
+   "crop_group": {
+    "value": "legume",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "SINGH"
+    ],
+    "note": ""
+   },
+   "water_requirement": {
+    "value": "unknown",
+    "trait_status": "unknown",
+    "source_ids": [],
+    "note": "Water requirement not sourced; scored neutral, not as low."
+   },
+   "drought_tolerance": {
+    "value": "high",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "SINGH",
+     "ABDOU-NIGER"
+    ],
+    "note": "Source is general; smallholder yields are often only 10-20% of potential (FTF23). Scores for crops not yet grown locally are shrunk toward neutral."
+   },
+   "nitrogen_fixing": {
+    "value": "yes",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "SINGH",
+     "ELEWA08"
+    ],
+    "note": "Benefit to the next cereal was smaller than after groundnut (BAG01)."
+   },
+   "nutrient_demand": {
+    "value": "low",
+    "trait_status": "assumption",
+    "source_ids": [
+     "ELEWA08"
+    ],
+    "note": "Phosphorus is often limiting."
+   },
+   "ground_cover_erosion": {
+    "value": "medium",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Cover benefit is an assumption; scored medium, not high."
+   },
+   "household_food_use": {
+    "value": "protein",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": "Pulses are under 1% of Gambian cropland, so cowpea is a minor food crop."
+   },
+   "market_access": {
+    "value": "limited",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": "Pulses are under 1% of Gambian cropland."
+   },
+   "input_cost": {
+    "value": "medium",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "SINGH",
+     "FTF23"
+    ],
+    "note": "Insect pests (thrips, Maruca) are major and usually need control."
+   },
+   "labour_demand": {
+    "value": "unknown",
+    "trait_status": "unknown",
+    "source_ids": [],
+    "note": "Labour demand not sourced; scored neutral."
+   },
+   "residue_livestock_value": {
+    "value": "yes",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "ABDOU-NIGER"
+    ],
+    "note": "Fodder is produced."
+   },
+   "seed_availability": {
+    "value": "unknown",
+    "trait_status": "unknown",
+    "source_ids": [],
+    "note": "Farmers said they would consider beans; seed access not yet confirmed."
+   },
+   "planting_months": {
+    "value": [
+     7,
+     8
+    ],
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": "Short-season crop; local calendar needed."
+   },
+   "harvest_months": {
+    "value": [
+     9,
+     10
+    ],
+    "trait_status": "assumption",
+    "source_ids": [
+     "SINGH"
+    ],
+    "note": "About 60-75 days after planting."
+   },
+   "pests_diseases": {
+    "value": "thrips, Maruca, aphids, pod-sucking bugs, Striga/Alectra, storage weevil",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "SINGH"
+    ],
+    "note": ""
+   },
+   "good_after": {
+    "value": [
+     "maize",
+     "millet",
+     "sorghum"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BAG01"
+    ],
+    "note": ""
+   },
+   "avoid_after": {
+    "value": [
+     "cowpea"
+    ],
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "_meta": {
+    "locally_confirmed": false,
+    "note": "Not yet confirmed as grown or available in Manduar."
+   },
+   "n_credit": {
+    "value": 0.6,
+    "trait_status": "assumption",
+    "source_ids": [
+     "BAG01"
+    ],
+    "note": "BAG01 reports much smaller cowpea effects on millet; the factor 0.6 is an assumption, not a measured value."
+   }
+  },
+  "sorghum": {
+   "crop_group": {
+    "value": "cereal",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "water_requirement": {
+    "value": "low",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "drought_tolerance": {
+    "value": "medium",
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "CRM22",
+     "GIEWS97"
+    ],
+    "note": "Millet performed better than sorghum under a drier scenario; part of the crop was lost in 1997."
+   },
+   "nitrogen_fixing": {
+    "value": "no",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "nutrient_demand": {
+    "value": "medium",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "ground_cover_erosion": {
+    "value": "medium",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "household_food_use": {
+    "value": "staple",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "market_access": {
+    "value": "limited",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "input_cost": {
+    "value": "low",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "labour_demand": {
+    "value": "medium",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "residue_livestock_value": {
+    "value": "yes",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "seed_availability": {
+    "value": "unknown",
+    "trait_status": "unknown",
+    "source_ids": [],
+    "note": "Farmers said they would consider sorghum; seed access not confirmed."
+   },
+   "planting_months": {
+    "value": [
+     6,
+     7
+    ],
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "GIEWS25"
+    ],
+    "note": ""
+   },
+   "harvest_months": {
+    "value": [
+     10,
+     11
+    ],
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "GIEWS25B"
+    ],
+    "note": ""
+   },
+   "pests_diseases": {
+    "value": "Striga, birds (to confirm)",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "good_after": {
+    "value": [
+     "groundnut",
+     "cowpea"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "BAG00"
+    ],
+    "note": ""
+   },
+   "avoid_after": {
+    "value": [
+     "sorghum",
+     "millet",
+     "maize"
+    ],
+    "trait_status": "sourced_regional",
+    "source_ids": [
+     "PMREV14"
+    ],
+    "note": ""
+   },
+   "_meta": {
+    "locally_confirmed": false,
+    "note": "Not yet confirmed as grown or available in Manduar."
+   }
+  },
+  "sesame": {
+   "crop_group": {
+    "value": "oilseed",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "FARMPEDIA"
+    ],
+    "note": ""
+   },
+   "water_requirement": {
+    "value": "low",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "FARMPEDIA"
+    ],
+    "note": ""
+   },
+   "drought_tolerance": {
+    "value": "high",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "FARMPEDIA",
+     "SESAME-REV"
+    ],
+    "note": ""
+   },
+   "nitrogen_fixing": {
+    "value": "no",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "FARMPEDIA"
+    ],
+    "note": ""
+   },
+   "nutrient_demand": {
+    "value": "low",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "ground_cover_erosion": {
+    "value": "low",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "household_food_use": {
+    "value": "oil_cash",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "AUBEE02",
+     "CSA18"
+    ],
+    "note": ""
+   },
+   "market_access": {
+    "value": "limited",
+    "trait_status": "sourced_local",
+    "source_ids": [
+     "AUBEE02",
+     "CSA18"
+    ],
+    "note": "About 1.3% of Gambian cropland; a long-running support programme existed."
+   },
+   "input_cost": {
+    "value": "low",
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "labour_demand": {
+    "value": "high",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "SESAME-REV"
+    ],
+    "note": "Shattering makes harvest manual and labour-intensive."
+   },
+   "residue_livestock_value": {
+    "value": "unknown",
+    "trait_status": "unknown",
+    "source_ids": [],
+    "note": ""
+   },
+   "seed_availability": {
+    "value": "unknown",
+    "trait_status": "unknown",
+    "source_ids": [],
+    "note": ""
+   },
+   "planting_months": {
+    "value": [
+     7
+    ],
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "harvest_months": {
+    "value": [
+     10,
+     11
+    ],
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "FARMPEDIA"
+    ],
+    "note": "95-110 days for early types."
+   },
+   "pests_diseases": {
+    "value": "shattering and seed loss",
+    "trait_status": "sourced_general",
+    "source_ids": [
+     "SESAME-REV"
+    ],
+    "note": ""
+   },
+   "good_after": {
+    "value": [
+     "groundnut",
+     "maize"
+    ],
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "avoid_after": {
+    "value": [
+     "sesame"
+    ],
+    "trait_status": "assumption",
+    "source_ids": [],
+    "note": ""
+   },
+   "_meta": {
+    "locally_confirmed": false,
+    "note": "Not yet confirmed as grown or available in Manduar."
+   }
+  }
+ },
+ "evidence_base_default": {
+  "site": "Manduar, Brikama, Western Region",
+  "farmers_interviewed": 1,
+  "fields_seen": 7,
+  "fields_recorded": 5,
+  "agronomist_reviewed": false,
+  "note": "One farmer interview; priority counts come from 5 recorded fields of that farmer."
+ }
+}

@@ -1,0 +1,2386 @@
+{
+  "schema_version": "1.0",
+  "field_id": "field-001",
+  "location": {
+    "name": "Brikama Manduar, The Gambia",
+    "latitude": 13.24890667,
+    "longitude": -16.61527333
+  },
+  "handoff_generated": "2026-11-11",
+  "reference_period": {
+    "start_year": 2015,
+    "end_year": 2025
+  },
+  "features": {
+    "rain_total_mm": {
+      "value": null,
+      "status": "source_specific_annual_observations_retained"
+    },
+    "dry_spell_max_days": {
+      "value": null,
+      "status": "source_specific_annual_observations_retained"
+    },
+    "dry_spells_ge7d": {
+      "value": null,
+      "status": "source_specific_annual_observations_retained"
+    },
+    "ndvi_cover_nov_jun": {
+      "value": null,
+      "status": "usable_november_to_june_observations_retained"
+    },
+    "slope_pct": {
+      "value": null,
+      "status": "not_calculated"
+    },
+    "soil_texture": {
+      "value": null,
+      "status": "incomplete_without_silt_fraction"
+    },
+    "soc": {
+      "value": null,
+      "status": "all_depths_retained_no_depth_selected"
+    },
+    "ph": {
+      "value": null,
+      "status": "all_depths_retained_no_depth_selected"
+    }
+  },
+  "evidence": {
+    "power_annual": [
+      {
+        "year": 2015,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 1157.5,
+          "rainy_days": 116,
+          "longest_dry_spell_days": 4,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 1181.0,
+          "rainy_days": 68,
+          "longest_dry_spell_days": 6,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2016,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 844.2,
+          "rainy_days": 101,
+          "longest_dry_spell_days": 3,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 917.9,
+          "rainy_days": 58,
+          "longest_dry_spell_days": 5,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2017,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 1212.1,
+          "rainy_days": 99,
+          "longest_dry_spell_days": 3,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 1012.9,
+          "rainy_days": 56,
+          "longest_dry_spell_days": 7,
+          "dry_spells_ge7_days": 1,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2018,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 973.6,
+          "rainy_days": 98,
+          "longest_dry_spell_days": 4,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 936.0,
+          "rainy_days": 56,
+          "longest_dry_spell_days": 5,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2019,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 980.2,
+          "rainy_days": 100,
+          "longest_dry_spell_days": 4,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 917.0,
+          "rainy_days": 62,
+          "longest_dry_spell_days": 10,
+          "dry_spells_ge7_days": 2,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2020,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 1520.8,
+          "rainy_days": 120,
+          "longest_dry_spell_days": 1,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 1450.9,
+          "rainy_days": 79,
+          "longest_dry_spell_days": 4,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2021,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 1208.2,
+          "rainy_days": 113,
+          "longest_dry_spell_days": 4,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 999.5,
+          "rainy_days": 68,
+          "longest_dry_spell_days": 8,
+          "dry_spells_ge7_days": 1,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2022,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 1430.3,
+          "rainy_days": 125,
+          "longest_dry_spell_days": 2,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 1303.7,
+          "rainy_days": 86,
+          "longest_dry_spell_days": 4,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2023,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 1185.5,
+          "rainy_days": 123,
+          "longest_dry_spell_days": 2,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 1062.6,
+          "rainy_days": 77,
+          "longest_dry_spell_days": 3,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2024,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 1332.0,
+          "rainy_days": 111,
+          "longest_dry_spell_days": 3,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 1292.1,
+          "rainy_days": 78,
+          "longest_dry_spell_days": 4,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      },
+      {
+        "year": 2025,
+        "rainfall_window_days": 153,
+        "dry_spell_window_days": 92,
+        "merra2": {
+          "rain_total_mm": 1029.0,
+          "rainy_days": 120,
+          "longest_dry_spell_days": 2,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        },
+        "imerg": {
+          "rain_total_mm": 1152.4,
+          "rainy_days": 74,
+          "longest_dry_spell_days": 4,
+          "dry_spells_ge7_days": 0,
+          "rain_missing_days": 0,
+          "spell_missing_days": 0
+        }
+      }
+    ],
+    "modis_ndvi_nov_jun_usable": [
+      {
+        "date": "2015-01-01",
+        "year": 2015,
+        "month": "2015-01",
+        "ndvi": 0.4028,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-01-17",
+        "year": 2015,
+        "month": "2015-01",
+        "ndvi": 0.4185,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-02-02",
+        "year": 2015,
+        "month": "2015-02",
+        "ndvi": 0.3931,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-02-18",
+        "year": 2015,
+        "month": "2015-02",
+        "ndvi": 0.3391,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-03-06",
+        "year": 2015,
+        "month": "2015-03",
+        "ndvi": 0.3397,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-03-22",
+        "year": 2015,
+        "month": "2015-03",
+        "ndvi": 0.3193,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-04-07",
+        "year": 2015,
+        "month": "2015-04",
+        "ndvi": 0.294,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2015-04-23",
+        "year": 2015,
+        "month": "2015-04",
+        "ndvi": 0.3013,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-05-09",
+        "year": 2015,
+        "month": "2015-05",
+        "ndvi": 0.2746,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-05-25",
+        "year": 2015,
+        "month": "2015-05",
+        "ndvi": 0.2938,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-06-10",
+        "year": 2015,
+        "month": "2015-06",
+        "ndvi": 0.2742,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2015-11-01",
+        "year": 2015,
+        "month": "2015-11",
+        "ndvi": 0.6916,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-11-17",
+        "year": 2015,
+        "month": "2015-11",
+        "ndvi": 0.6477,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-12-03",
+        "year": 2015,
+        "month": "2015-12",
+        "ndvi": 0.5199,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2015-12-19",
+        "year": 2015,
+        "month": "2015-12",
+        "ndvi": 0.4511,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-01-01",
+        "year": 2016,
+        "month": "2016-01",
+        "ndvi": 0.5001,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-01-17",
+        "year": 2016,
+        "month": "2016-01",
+        "ndvi": 0.3918,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-02-02",
+        "year": 2016,
+        "month": "2016-02",
+        "ndvi": 0.3372,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-02-18",
+        "year": 2016,
+        "month": "2016-02",
+        "ndvi": 0.3342,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-03-05",
+        "year": 2016,
+        "month": "2016-03",
+        "ndvi": 0.3766,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-03-21",
+        "year": 2016,
+        "month": "2016-03",
+        "ndvi": 0.3142,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-04-06",
+        "year": 2016,
+        "month": "2016-04",
+        "ndvi": 0.3082,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-04-22",
+        "year": 2016,
+        "month": "2016-04",
+        "ndvi": 0.285,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-05-08",
+        "year": 2016,
+        "month": "2016-05",
+        "ndvi": 0.33,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-05-24",
+        "year": 2016,
+        "month": "2016-05",
+        "ndvi": 0.3013,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-06-09",
+        "year": 2016,
+        "month": "2016-06",
+        "ndvi": 0.3054,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-06-25",
+        "year": 2016,
+        "month": "2016-06",
+        "ndvi": 0.2812,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-11-16",
+        "year": 2016,
+        "month": "2016-11",
+        "ndvi": 0.4949,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-12-02",
+        "year": 2016,
+        "month": "2016-12",
+        "ndvi": 0.4435,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2016-12-18",
+        "year": 2016,
+        "month": "2016-12",
+        "ndvi": 0.4442,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-01-01",
+        "year": 2017,
+        "month": "2017-01",
+        "ndvi": 0.3805,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-01-17",
+        "year": 2017,
+        "month": "2017-01",
+        "ndvi": 0.3631,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-02-02",
+        "year": 2017,
+        "month": "2017-02",
+        "ndvi": 0.3528,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-02-18",
+        "year": 2017,
+        "month": "2017-02",
+        "ndvi": 0.3423,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-03-06",
+        "year": 2017,
+        "month": "2017-03",
+        "ndvi": 0.3439,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-03-22",
+        "year": 2017,
+        "month": "2017-03",
+        "ndvi": 0.3086,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-04-07",
+        "year": 2017,
+        "month": "2017-04",
+        "ndvi": 0.2766,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-04-23",
+        "year": 2017,
+        "month": "2017-04",
+        "ndvi": 0.2781,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-05-09",
+        "year": 2017,
+        "month": "2017-05",
+        "ndvi": 0.2887,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2017-05-25",
+        "year": 2017,
+        "month": "2017-05",
+        "ndvi": 0.2556,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-06-10",
+        "year": 2017,
+        "month": "2017-06",
+        "ndvi": 0.2579,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-11-01",
+        "year": 2017,
+        "month": "2017-11",
+        "ndvi": 0.4312,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-11-17",
+        "year": 2017,
+        "month": "2017-11",
+        "ndvi": 0.4236,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-12-03",
+        "year": 2017,
+        "month": "2017-12",
+        "ndvi": 0.3664,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2017-12-19",
+        "year": 2017,
+        "month": "2017-12",
+        "ndvi": 0.3416,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-01-01",
+        "year": 2018,
+        "month": "2018-01",
+        "ndvi": 0.3349,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-01-17",
+        "year": 2018,
+        "month": "2018-01",
+        "ndvi": 0.3479,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-02-02",
+        "year": 2018,
+        "month": "2018-02",
+        "ndvi": 0.3468,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-02-18",
+        "year": 2018,
+        "month": "2018-02",
+        "ndvi": 0.3168,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-03-06",
+        "year": 2018,
+        "month": "2018-03",
+        "ndvi": 0.2809,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-03-22",
+        "year": 2018,
+        "month": "2018-03",
+        "ndvi": 0.2771,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-04-07",
+        "year": 2018,
+        "month": "2018-04",
+        "ndvi": 0.2666,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-04-23",
+        "year": 2018,
+        "month": "2018-04",
+        "ndvi": 0.2669,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-05-09",
+        "year": 2018,
+        "month": "2018-05",
+        "ndvi": 0.2683,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-05-25",
+        "year": 2018,
+        "month": "2018-05",
+        "ndvi": 0.2274,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-06-10",
+        "year": 2018,
+        "month": "2018-06",
+        "ndvi": 0.2387,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-11-01",
+        "year": 2018,
+        "month": "2018-11",
+        "ndvi": 0.4857,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-11-17",
+        "year": 2018,
+        "month": "2018-11",
+        "ndvi": 0.4568,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-12-03",
+        "year": 2018,
+        "month": "2018-12",
+        "ndvi": 0.3622,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2018-12-19",
+        "year": 2018,
+        "month": "2018-12",
+        "ndvi": 0.3707,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-01-01",
+        "year": 2019,
+        "month": "2019-01",
+        "ndvi": 0.3778,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-01-17",
+        "year": 2019,
+        "month": "2019-01",
+        "ndvi": 0.3242,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-02-02",
+        "year": 2019,
+        "month": "2019-02",
+        "ndvi": 0.3501,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-02-18",
+        "year": 2019,
+        "month": "2019-02",
+        "ndvi": 0.334,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-03-06",
+        "year": 2019,
+        "month": "2019-03",
+        "ndvi": 0.3302,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-03-22",
+        "year": 2019,
+        "month": "2019-03",
+        "ndvi": 0.2898,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-04-07",
+        "year": 2019,
+        "month": "2019-04",
+        "ndvi": 0.2838,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-04-23",
+        "year": 2019,
+        "month": "2019-04",
+        "ndvi": 0.2951,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-05-09",
+        "year": 2019,
+        "month": "2019-05",
+        "ndvi": 0.294,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-05-25",
+        "year": 2019,
+        "month": "2019-05",
+        "ndvi": 0.2607,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-06-10",
+        "year": 2019,
+        "month": "2019-06",
+        "ndvi": 0.2907,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-06-26",
+        "year": 2019,
+        "month": "2019-06",
+        "ndvi": 0.2638,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-11-01",
+        "year": 2019,
+        "month": "2019-11",
+        "ndvi": 0.5178,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-11-17",
+        "year": 2019,
+        "month": "2019-11",
+        "ndvi": 0.3754,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-12-03",
+        "year": 2019,
+        "month": "2019-12",
+        "ndvi": 0.3578,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2019-12-19",
+        "year": 2019,
+        "month": "2019-12",
+        "ndvi": 0.3623,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-01-01",
+        "year": 2020,
+        "month": "2020-01",
+        "ndvi": 0.3099,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-01-17",
+        "year": 2020,
+        "month": "2020-01",
+        "ndvi": 0.3136,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-02-02",
+        "year": 2020,
+        "month": "2020-02",
+        "ndvi": 0.3443,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-02-18",
+        "year": 2020,
+        "month": "2020-02",
+        "ndvi": 0.3025,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-03-05",
+        "year": 2020,
+        "month": "2020-03",
+        "ndvi": 0.2831,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-03-21",
+        "year": 2020,
+        "month": "2020-03",
+        "ndvi": 0.3018,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-04-06",
+        "year": 2020,
+        "month": "2020-04",
+        "ndvi": 0.2679,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-04-22",
+        "year": 2020,
+        "month": "2020-04",
+        "ndvi": 0.287,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-05-08",
+        "year": 2020,
+        "month": "2020-05",
+        "ndvi": 0.2494,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-05-24",
+        "year": 2020,
+        "month": "2020-05",
+        "ndvi": 0.2863,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-11-16",
+        "year": 2020,
+        "month": "2020-11",
+        "ndvi": 0.3767,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-12-02",
+        "year": 2020,
+        "month": "2020-12",
+        "ndvi": 0.4047,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2020-12-18",
+        "year": 2020,
+        "month": "2020-12",
+        "ndvi": 0.4325,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-01-01",
+        "year": 2021,
+        "month": "2021-01",
+        "ndvi": 0.3792,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-01-17",
+        "year": 2021,
+        "month": "2021-01",
+        "ndvi": 0.3794,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-02-02",
+        "year": 2021,
+        "month": "2021-02",
+        "ndvi": 0.4242,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-02-18",
+        "year": 2021,
+        "month": "2021-02",
+        "ndvi": 0.3158,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-03-06",
+        "year": 2021,
+        "month": "2021-03",
+        "ndvi": 0.2843,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2021-03-22",
+        "year": 2021,
+        "month": "2021-03",
+        "ndvi": 0.3415,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-04-07",
+        "year": 2021,
+        "month": "2021-04",
+        "ndvi": 0.2963,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-04-23",
+        "year": 2021,
+        "month": "2021-04",
+        "ndvi": 0.2931,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-05-09",
+        "year": 2021,
+        "month": "2021-05",
+        "ndvi": 0.2648,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-05-25",
+        "year": 2021,
+        "month": "2021-05",
+        "ndvi": 0.2728,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-06-10",
+        "year": 2021,
+        "month": "2021-06",
+        "ndvi": 0.2845,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2021-06-26",
+        "year": 2021,
+        "month": "2021-06",
+        "ndvi": 0.272,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2021-11-01",
+        "year": 2021,
+        "month": "2021-11",
+        "ndvi": 0.5889,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-11-17",
+        "year": 2021,
+        "month": "2021-11",
+        "ndvi": 0.4719,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-12-03",
+        "year": 2021,
+        "month": "2021-12",
+        "ndvi": 0.4685,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2021-12-19",
+        "year": 2021,
+        "month": "2021-12",
+        "ndvi": 0.4569,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-01-01",
+        "year": 2022,
+        "month": "2022-01",
+        "ndvi": 0.3859,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-01-17",
+        "year": 2022,
+        "month": "2022-01",
+        "ndvi": 0.3608,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-02-02",
+        "year": 2022,
+        "month": "2022-02",
+        "ndvi": 0.3502,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-02-18",
+        "year": 2022,
+        "month": "2022-02",
+        "ndvi": 0.3285,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-03-06",
+        "year": 2022,
+        "month": "2022-03",
+        "ndvi": 0.365,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-03-22",
+        "year": 2022,
+        "month": "2022-03",
+        "ndvi": 0.337,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-04-07",
+        "year": 2022,
+        "month": "2022-04",
+        "ndvi": 0.2887,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-04-23",
+        "year": 2022,
+        "month": "2022-04",
+        "ndvi": 0.2872,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-05-09",
+        "year": 2022,
+        "month": "2022-05",
+        "ndvi": 0.2712,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-05-25",
+        "year": 2022,
+        "month": "2022-05",
+        "ndvi": 0.3275,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-06-10",
+        "year": 2022,
+        "month": "2022-06",
+        "ndvi": 0.3526,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-11-01",
+        "year": 2022,
+        "month": "2022-11",
+        "ndvi": 0.5932,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2022-11-17",
+        "year": 2022,
+        "month": "2022-11",
+        "ndvi": 0.5374,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-12-03",
+        "year": 2022,
+        "month": "2022-12",
+        "ndvi": 0.4602,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2022-12-19",
+        "year": 2022,
+        "month": "2022-12",
+        "ndvi": 0.3839,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-01-01",
+        "year": 2023,
+        "month": "2023-01",
+        "ndvi": 0.487,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-01-17",
+        "year": 2023,
+        "month": "2023-01",
+        "ndvi": 0.3725,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-02-02",
+        "year": 2023,
+        "month": "2023-02",
+        "ndvi": 0.3417,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-02-18",
+        "year": 2023,
+        "month": "2023-02",
+        "ndvi": 0.34,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-03-06",
+        "year": 2023,
+        "month": "2023-03",
+        "ndvi": 0.3471,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-03-22",
+        "year": 2023,
+        "month": "2023-03",
+        "ndvi": 0.2958,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-04-07",
+        "year": 2023,
+        "month": "2023-04",
+        "ndvi": 0.271,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-04-23",
+        "year": 2023,
+        "month": "2023-04",
+        "ndvi": 0.3596,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-05-09",
+        "year": 2023,
+        "month": "2023-05",
+        "ndvi": 0.2572,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-05-25",
+        "year": 2023,
+        "month": "2023-05",
+        "ndvi": 0.299,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-06-26",
+        "year": 2023,
+        "month": "2023-06",
+        "ndvi": 0.2861,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2023-11-01",
+        "year": 2023,
+        "month": "2023-11",
+        "ndvi": 0.5571,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-11-17",
+        "year": 2023,
+        "month": "2023-11",
+        "ndvi": 0.4534,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-12-03",
+        "year": 2023,
+        "month": "2023-12",
+        "ndvi": 0.4374,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2023-12-19",
+        "year": 2023,
+        "month": "2023-12",
+        "ndvi": 0.3501,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-01-01",
+        "year": 2024,
+        "month": "2024-01",
+        "ndvi": 0.3929,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-01-17",
+        "year": 2024,
+        "month": "2024-01",
+        "ndvi": 0.303,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2024-02-02",
+        "year": 2024,
+        "month": "2024-02",
+        "ndvi": 0.3613,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-02-18",
+        "year": 2024,
+        "month": "2024-02",
+        "ndvi": 0.3262,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-03-05",
+        "year": 2024,
+        "month": "2024-03",
+        "ndvi": 0.2988,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-03-21",
+        "year": 2024,
+        "month": "2024-03",
+        "ndvi": 0.2908,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-04-06",
+        "year": 2024,
+        "month": "2024-04",
+        "ndvi": 0.3221,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-04-22",
+        "year": 2024,
+        "month": "2024-04",
+        "ndvi": 0.2875,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-05-08",
+        "year": 2024,
+        "month": "2024-05",
+        "ndvi": 0.2724,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-05-24",
+        "year": 2024,
+        "month": "2024-05",
+        "ndvi": 0.2658,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-06-09",
+        "year": 2024,
+        "month": "2024-06",
+        "ndvi": 0.2385,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-11-16",
+        "year": 2024,
+        "month": "2024-11",
+        "ndvi": 0.437,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-12-02",
+        "year": 2024,
+        "month": "2024-12",
+        "ndvi": 0.3776,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2024-12-18",
+        "year": 2024,
+        "month": "2024-12",
+        "ndvi": 0.3886,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-01-01",
+        "year": 2025,
+        "month": "2025-01",
+        "ndvi": 0.4131,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-01-17",
+        "year": 2025,
+        "month": "2025-01",
+        "ndvi": 0.4116,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-02-18",
+        "year": 2025,
+        "month": "2025-02",
+        "ndvi": 0.3299,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-03-06",
+        "year": 2025,
+        "month": "2025-03",
+        "ndvi": 0.3223,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-03-22",
+        "year": 2025,
+        "month": "2025-03",
+        "ndvi": 0.3293,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-04-07",
+        "year": 2025,
+        "month": "2025-04",
+        "ndvi": 0.3208,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-04-23",
+        "year": 2025,
+        "month": "2025-04",
+        "ndvi": 0.2472,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2025-05-09",
+        "year": 2025,
+        "month": "2025-05",
+        "ndvi": 0.2506,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-05-25",
+        "year": 2025,
+        "month": "2025-05",
+        "ndvi": 0.2494,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-06-10",
+        "year": 2025,
+        "month": "2025-06",
+        "ndvi": 0.2925,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-11-01",
+        "year": 2025,
+        "month": "2025-11",
+        "ndvi": 0.5822,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-11-17",
+        "year": 2025,
+        "month": "2025-11",
+        "ndvi": 0.5095,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-12-03",
+        "year": 2025,
+        "month": "2025-12",
+        "ndvi": 0.4603,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2025-12-19",
+        "year": 2025,
+        "month": "2025-12",
+        "ndvi": 0.4724,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-01-01",
+        "year": 2026,
+        "month": "2026-01",
+        "ndvi": 0.403,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-01-17",
+        "year": 2026,
+        "month": "2026-01",
+        "ndvi": 0.3913,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-02-02",
+        "year": 2026,
+        "month": "2026-02",
+        "ndvi": 0.383,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-02-18",
+        "year": 2026,
+        "month": "2026-02",
+        "ndvi": 0.3642,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-03-06",
+        "year": 2026,
+        "month": "2026-03",
+        "ndvi": 0.3298,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-03-22",
+        "year": 2026,
+        "month": "2026-03",
+        "ndvi": 0.2995,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-04-07",
+        "year": 2026,
+        "month": "2026-04",
+        "ndvi": 0.3087,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-04-23",
+        "year": 2026,
+        "month": "2026-04",
+        "ndvi": 0.2608,
+        "reliability": 0,
+        "quality_label": "Good"
+      },
+      {
+        "date": "2026-05-09",
+        "year": 2026,
+        "month": "2026-05",
+        "ndvi": 0.2417,
+        "reliability": 1,
+        "quality_label": "Marginal"
+      },
+      {
+        "date": "2026-05-25",
+        "year": 2026,
+        "month": "2026-05",
+        "ndvi": 0.2526,
+        "reliability": 0,
+        "quality_label": "Good"
+      }
+    ],
+    "soilgrids": [
+      {
+        "property": "phh2o",
+        "depth": "0-5cm",
+        "value": 5.4,
+        "unit": "pH",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "phh2o",
+        "depth": "5-15cm",
+        "value": 5.3,
+        "unit": "pH",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "phh2o",
+        "depth": "15-30cm",
+        "value": 5.3,
+        "unit": "pH",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "phh2o",
+        "depth": "30-60cm",
+        "value": 5.2,
+        "unit": "pH",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "soc",
+        "depth": "0-5cm",
+        "value": 10.1,
+        "unit": "g/kg",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "soc",
+        "depth": "5-15cm",
+        "value": 8.1,
+        "unit": "g/kg",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "soc",
+        "depth": "15-30cm",
+        "value": 5.5,
+        "unit": "g/kg",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "soc",
+        "depth": "30-60cm",
+        "value": 4.5,
+        "unit": "g/kg",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "clay",
+        "depth": "0-5cm",
+        "value": 11.3,
+        "unit": "%",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "clay",
+        "depth": "5-15cm",
+        "value": 11.1,
+        "unit": "%",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "clay",
+        "depth": "15-30cm",
+        "value": 13.7,
+        "unit": "%",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "clay",
+        "depth": "30-60cm",
+        "value": 13.3,
+        "unit": "%",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "sand",
+        "depth": "0-5cm",
+        "value": 57.0,
+        "unit": "%",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "sand",
+        "depth": "5-15cm",
+        "value": 58.5,
+        "unit": "%",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "sand",
+        "depth": "15-30cm",
+        "value": 54.9,
+        "unit": "%",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "sand",
+        "depth": "30-60cm",
+        "value": 59.0,
+        "unit": "%",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "nitrogen",
+        "depth": "0-5cm",
+        "value": 0.88,
+        "unit": "g/kg",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "nitrogen",
+        "depth": "5-15cm",
+        "value": 0.8,
+        "unit": "g/kg",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "nitrogen",
+        "depth": "15-30cm",
+        "value": 0.59,
+        "unit": "g/kg",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "nitrogen",
+        "depth": "30-60cm",
+        "value": 0.48,
+        "unit": "g/kg",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "bdod",
+        "depth": "0-5cm",
+        "value": 1.48,
+        "unit": "kg/dm3",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "bdod",
+        "depth": "5-15cm",
+        "value": 1.5,
+        "unit": "kg/dm3",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "bdod",
+        "depth": "15-30cm",
+        "value": 1.48,
+        "unit": "kg/dm3",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      },
+      {
+        "property": "bdod",
+        "depth": "30-60cm",
+        "value": 1.46,
+        "unit": "kg/dm3",
+        "quantile": "Q0.5",
+        "source": "ISRIC SoilGrids 2.0"
+      }
+    ],
+    "srtm_elevation_samples": [
+      {
+        "latitude": 13.249166666666667,
+        "longitude": -16.615555555555556,
+        "row_offset": -1,
+        "column_offset": -1,
+        "elevation_m": 26.0
+      },
+      {
+        "latitude": 13.249166666666667,
+        "longitude": -16.615277777777777,
+        "row_offset": -1,
+        "column_offset": 0,
+        "elevation_m": 26.0
+      },
+      {
+        "latitude": 13.249166666666667,
+        "longitude": -16.615,
+        "row_offset": -1,
+        "column_offset": 1,
+        "elevation_m": 26.0
+      },
+      {
+        "latitude": 13.248888888888889,
+        "longitude": -16.615555555555556,
+        "row_offset": 0,
+        "column_offset": -1,
+        "elevation_m": 26.0
+      },
+      {
+        "latitude": 13.248888888888889,
+        "longitude": -16.615277777777777,
+        "row_offset": 0,
+        "column_offset": 0,
+        "elevation_m": 25.0
+      },
+      {
+        "latitude": 13.248888888888889,
+        "longitude": -16.615,
+        "row_offset": 0,
+        "column_offset": 1,
+        "elevation_m": 26.0
+      },
+      {
+        "latitude": 13.248611111111112,
+        "longitude": -16.615555555555556,
+        "row_offset": 1,
+        "column_offset": -1,
+        "elevation_m": 26.0
+      },
+      {
+        "latitude": 13.248611111111112,
+        "longitude": -16.615277777777777,
+        "row_offset": 1,
+        "column_offset": 0,
+        "elevation_m": 26.0
+      },
+      {
+        "latitude": 13.248611111111112,
+        "longitude": -16.615,
+        "row_offset": 1,
+        "column_offset": 1,
+        "elevation_m": 26.0
+      }
+    ],
+    "smap_monthly_snapshots": [
+      {
+        "year": 2015,
+        "month": 7,
+        "granule_time_utc": "20150715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.18398815393447876,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.19188077747821808,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2015,
+        "month": 8,
+        "granule_time_utc": "20150815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.27435532212257385,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2935141324996948,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2015,
+        "month": 9,
+        "granule_time_utc": "20150915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.22145430743694305,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2563323676586151,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2015,
+        "month": 10,
+        "granule_time_utc": "20151015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.2234996259212494,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2288098782300949,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2016,
+        "month": 7,
+        "granule_time_utc": "20160715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.20333640277385712,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.19272825121879578,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2016,
+        "month": 8,
+        "granule_time_utc": "20160815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.19791178405284882,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.224376380443573,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2016,
+        "month": 9,
+        "granule_time_utc": "20160915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.18946613371372223,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.23484443128108978,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2016,
+        "month": 10,
+        "granule_time_utc": "20161015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.12388841062784195,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.1799115687608719,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2017,
+        "month": 7,
+        "granule_time_utc": "20170715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.2207840085029602,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2484089434146881,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2017,
+        "month": 8,
+        "granule_time_utc": "20170815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.24310997128486633,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2901305556297302,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2017,
+        "month": 9,
+        "granule_time_utc": "20170915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.2087436467409134,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2220381200313568,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2017,
+        "month": 10,
+        "granule_time_utc": "20171015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.14539793133735657,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.1811385154724121,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2018,
+        "month": 7,
+        "granule_time_utc": "20180715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.16037501394748688,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2203313708305359,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2018,
+        "month": 8,
+        "granule_time_utc": "20180815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.18147772550582886,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.250944048166275,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2018,
+        "month": 9,
+        "granule_time_utc": "20180915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.1928683966398239,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2343529462814331,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2018,
+        "month": 10,
+        "granule_time_utc": "20181015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.13985559344291687,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.18741190433502197,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2019,
+        "month": 7,
+        "granule_time_utc": "20190715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.12206965684890747,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.1544872373342514,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2019,
+        "month": 8,
+        "granule_time_utc": "20190815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.14386871457099915,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.1780453622341156,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2019,
+        "month": 9,
+        "granule_time_utc": "20190915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.26327162981033325,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.3073120713233948,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2019,
+        "month": 10,
+        "granule_time_utc": "20191015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.20495958626270294,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.20546245574951172,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2020,
+        "month": 7,
+        "granule_time_utc": "20200715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.18674436211585999,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.19714951515197754,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2020,
+        "month": 8,
+        "granule_time_utc": "20200815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.29931163787841797,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.31409573554992676,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2020,
+        "month": 9,
+        "granule_time_utc": "20200915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.26673030853271484,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2740572690963745,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2020,
+        "month": 10,
+        "granule_time_utc": "20201015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.19751881062984467,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.22774189710617065,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2021,
+        "month": 7,
+        "granule_time_utc": "20210715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.12985220551490784,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.17227596044540405,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2021,
+        "month": 8,
+        "granule_time_utc": "20210815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.2403637170791626,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.24127966165542603,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2021,
+        "month": 9,
+        "granule_time_utc": "20210915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.22544614970684052,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2539331018924713,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2021,
+        "month": 10,
+        "granule_time_utc": "20211015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.13178543746471405,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.1817508488893509,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2022,
+        "month": 7,
+        "granule_time_utc": "20220715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.19788672029972076,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.19097712635993958,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2022,
+        "month": 8,
+        "granule_time_utc": "20220815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.2167777717113495,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.25378286838531494,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2022,
+        "month": 9,
+        "granule_time_utc": "20220915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.232197567820549,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2506709694862366,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2022,
+        "month": 10,
+        "granule_time_utc": "20221015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.19751562178134918,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.20831327140331268,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2023,
+        "month": 7,
+        "granule_time_utc": "20230715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.19865210354328156,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2195543646812439,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2023,
+        "month": 8,
+        "granule_time_utc": "20230815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.24420417845249176,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2260492742061615,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2023,
+        "month": 9,
+        "granule_time_utc": "20230915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.17556412518024445,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.21416789293289185,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2023,
+        "month": 10,
+        "granule_time_utc": "20231015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.18518808484077454,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2029084712266922,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2024,
+        "month": 7,
+        "granule_time_utc": "20240715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.23220457136631012,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2467675358057022,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2024,
+        "month": 8,
+        "granule_time_utc": "20240815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.23174023628234863,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.22381512820720673,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2024,
+        "month": 9,
+        "granule_time_utc": "20240915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.2289038747549057,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.24147194623947144,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2024,
+        "month": 10,
+        "granule_time_utc": "20241015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.2005620002746582,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.22069336473941803,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2025,
+        "month": 7,
+        "granule_time_utc": "20250715T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.19322340190410614,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.22410999238491058,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2025,
+        "month": 8,
+        "granule_time_utc": "20250815T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.2486121505498886,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2685502767562866,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2025,
+        "month": 9,
+        "granule_time_utc": "20250915T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.26659485697746277,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.2394963502883911,
+        "rootzone_quality": "valid"
+      },
+      {
+        "year": 2025,
+        "month": 10,
+        "granule_time_utc": "20251015T103000",
+        "distance_from_pilot_km": 6.168,
+        "surface_soil_moisture_m3_m3": 0.18587139248847961,
+        "surface_quality": "valid",
+        "rootzone_soil_moisture_m3_m3": 0.19811317324638367,
+        "rootzone_quality": "valid"
+      }
+    ]
+  },
+  "methodology": {
+    "modis_usable_reliability_values": [
+      0,
+      1
+    ],
+    "modis_season": "November-June",
+    "rainfall_window": "June-October",
+    "dry_spell_window": "July-September",
+    "dry_day_threshold_mm": 1,
+    "dry_spell_threshold_days": 7,
+    "missing_values": "preserved_as_null",
+    "slope": "not_inferred",
+    "soil_texture": "not_inferred_without_silt",
+    "soil_depths": "preserved_separately",
+    "smap": "mid-month_snapshots_not_monthly_averages"
+  }
+}

@@ -1,0 +1,153 @@
+
+{
+  "field_id": "field-001",
+  "location": {
+    "district": "Demo District",
+    "region": "Demo Region",
+    "country": "The Gambia"
+  },
+  "features": {
+    "rain_total_mm": {
+      "value": null,
+      "range": null,
+      "rank": null,
+      "unit": "mm",
+      "datasets": [
+        "MERRA-2",
+        "IMERG"
+      ],
+      "resolution": "Dataset-specific",
+      "period": "June-October",
+      "data_type": "Reanalysis and satellite-derived estimates",
+      "confidence": "unassessed",
+      "notes": "Compare source ranges and rankings. Do not present unsupported absolute rainfall totals."
+    },
+    "dry_spell_max_days": {
+      "value": null,
+      "unit": "days",
+      "datasets": [
+        "MERRA-2",
+        "IMERG"
+      ],
+      "resolution": "Dataset-specific",
+      "period": "July-September",
+      "data_type": "Derived from rainfall data",
+      "confidence": "unassessed",
+      "notes": "Requires consistent dry-day definition and source comparison."
+    },
+    "dry_spells_ge7d": {
+      "value": null,
+      "unit": "count",
+      "datasets": [
+        "MERRA-2",
+        "IMERG"
+      ],
+      "resolution": "Dataset-specific",
+      "period": "July-September",
+      "data_type": "Derived from rainfall data",
+      "confidence": "unassessed",
+      "notes": "Counts dry spells lasting seven or more consecutive days."
+    },
+    "ndvi_cover_nov_jun": {
+      "value": null,
+      "unit": "NDVI",
+      "dataset": "MODIS MOD13Q1",
+      "resolution": "250m (~6.25 hectares per pixel)",
+      "period": "November-June",
+      "data_type": "Satellite vegetation index",
+      "confidence": "unassessed",
+      "quality_filter": "Good-quality composites only",
+      "notes": "Landscape vegetation-cover context only. Do not interpret as direct crop stress."
+    },
+    "slope_pct": {
+      "value": null,
+      "unit": "%",
+      "dataset": "SRTM",
+      "resolution": "30m",
+      "period": "Static terrain data",
+      "data_type": "Derived terrain feature",
+      "confidence": "unassessed",
+      "notes": "Represents area-level slope context."
+    },
+    "soil_texture": {
+      "value": null,
+      "unit": null,
+      "dataset": "SoilGrids",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Modelled soil property",
+      "confidence": "unassessed",
+      "notes": "Represents area-level soil texture context."
+    },
+    "soc": {
+      "value": null,
+      "unit": null,
+      "dataset": "SoilGrids",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Modelled soil property",
+      "confidence": "unassessed",
+      "notes": "Soil organic carbon. Confirm the exact SoilGrids layer and units during pipeline implementation."
+    },
+    "ph": {
+      "value": null,
+      "unit": "pH",
+      "dataset": "SoilGrids",
+      "resolution": "250m",
+      "period": "Static soil data",
+      "data_type": "Modelled soil property",
+      "confidence": "unassessed",
+      "notes": "Represents area-level soil acidity or alkalinity context."
+    }
+  },
+  "strategies": [
+    {
+      "id": "A",
+      "name": "Strategy A",
+      "score": null,
+      "score_range": null,
+      "confidence": "unassessed",
+      "criteria": [],
+      "sequence": [],
+      "why": "Pending validated field data and decision-engine evaluation.",
+      "evidence": [],
+      "benefits": [],
+      "trade_offs": [],
+      "gaps": [],
+      "risks_for_local_review": []
+    },
+    {
+      "id": "B",
+      "name": "Strategy B",
+      "score": null,
+      "score_range": null,
+      "confidence": "unassessed",
+      "criteria": [],
+      "sequence": [],
+      "why": "Pending validated field data and decision-engine evaluation.",
+      "evidence": [],
+      "benefits": [],
+      "trade_offs": [],
+      "gaps": [],
+      "risks_for_local_review": []
+    },
+    {
+      "id": "C",
+      "name": "Strategy C",
+      "score": null,
+      "score_range": null,
+      "confidence": "unassessed",
+      "criteria": [],
+      "sequence": [],
+      "why": "Pending validated field data and decision-engine evaluation.",
+      "evidence": [],
+      "benefits": [],
+      "trade_offs": [],
+      "gaps": [],
+      "risks_for_local_review": []
+    }
+  ],
+  "weights": {},
+  "constraints": {},
+  "disclaimer": "Demonstration data only. Recommendations are not validated agricultural advice. Farmers and local agricultural experts must review recommendations before implementation."
+}
