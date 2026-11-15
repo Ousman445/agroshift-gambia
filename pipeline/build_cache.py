@@ -1,3 +1,4 @@
+
 import csv
 import json
 import sys
@@ -5,7 +6,7 @@ from pathlib import Path
 
 if len(sys.argv) != 2:
     raise SystemExit(
-        "Usage: python3 pipeline/build_cache.py /path/to/AgroShift_Pilot_Data_Handoff_20261111"
+        "Usage: python3 pipeline/build_cache.py /path/to/AgroShift_Final_Handoff_20261115"
     )
 
 SOURCE = Path(sys.argv[1])
@@ -13,9 +14,19 @@ OUTPUT = Path("pipeline/cache/field-001.json")
 
 
 def read_csv(relative_path):
+    # Support both normal directory paths and the literal backslash
+    # filenames in the extracted final handoff.
     path = SOURCE / relative_path
+
     if not path.exists():
-        raise FileNotFoundError(path)
+        flat_name = relative_path.replace("/", "\\")
+        path = SOURCE / flat_name
+
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Dataset not found. Checked: "
+            f"{SOURCE / relative_path} and {SOURCE / relative_path.replace('/', chr(92))}"
+        )
 
     with path.open(encoding="utf-8-sig", newline="") as file:
         return list(csv.DictReader(file))
@@ -33,7 +44,7 @@ def integer(value):
     return int(value)
 
 
-# 1. POWER: retain the complete reference-period annual observations.
+# 1. POWER: retain complete reference-period annual observations.
 annual_rows = read_csv("POWER/annual_features.csv")
 annual = []
 
@@ -80,7 +91,7 @@ for row in annual_rows:
     })
 
 
-# 2. MODIS: retain the handoff's usable observations (reliability 0 and 1).
+# 2. MODIS: retain usable observations (reliability 0 and 1).
 ndvi_rows = read_csv("MODIS/ndvi_series.csv")
 ndvi = []
 
@@ -102,7 +113,7 @@ for row in ndvi_rows:
     })
 
 
-# 3. SoilGrids: retain every property and depth without selecting one.
+# 3. SoilGrids: retain every property and depth.
 soil_rows = read_csv("SoilGrids/pilot_soilgrids_converted.csv")
 soil = []
 
@@ -117,7 +128,7 @@ for row in soil_rows:
     })
 
 
-# 4. SRTM: retain the elevation samples; do not infer slope.
+# 4. SRTM: retain elevation samples; do not infer slope.
 elevation_rows = read_csv("SRTM/pilot_elevation_samples.csv")
 elevation = []
 
@@ -131,7 +142,7 @@ for row in elevation_rows:
     })
 
 
-# 5. SMAP: retain monthly snapshots and their quality/distance information.
+# 5. SMAP: retain monthly snapshots and quality/distance information.
 smap_rows = read_csv("SMAP/smap_pilot_moisture.csv")
 smap = []
 
@@ -162,7 +173,7 @@ cache = {
         "latitude": 13.24890667,
         "longitude": -16.61527333,
     },
-    "handoff_generated": "2026-11-11",
+    "handoff_generated": "2026-11-15",
     "reference_period": {
         "start_year": 2015,
         "end_year": 2025,
