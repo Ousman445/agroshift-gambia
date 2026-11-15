@@ -3,13 +3,14 @@
 import json
 from functools import lru_cache
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from app.strategy_engine import recommend_strategies
+from app.chat_service import answer_chat
 from engine.knowledge_base import load_kb
 from engine.rules import (
     CRITERIA,
@@ -164,6 +165,28 @@ class StrategyRequest(BaseModel):
     evidence_base: dict[str, Any] | None = None
 
 
+
+class ChatMessage(BaseModel):
+    """One message in the conversation history."""
+
+    role: Literal["user", "assistant"]
+    content: str = Field(min_length=1, max_length=2000)
+
+
+class ChatRequest(BaseModel):
+    """Input contract for the Gemini chat endpoint."""
+
+    message: str = Field(min_length=1, max_length=2000)
+    field_id: str = Field(
+        default="field-001",
+        min_length=1,
+        max_length=100,
+    )
+    history: list[ChatMessage] = Field(
+        default_factory=list,
+        max_length=10,
+    )
+
 def load_field_data(file_path: Path):
     try:
         with file_path.open("r", encoding="utf-8") as file:
@@ -241,6 +264,34 @@ def create_strategies(request: StrategyRequest):
             detail=f"Invalid strategy input: {exc}",
         ) from exc
 
+
+
+@app.post("/api/v2/chat")
+def chat(request: ChatRequest):
+    """Generate an AgroShift-grounded response using Gemini."""
+    try:
+        answer = answer_chat(
+            message=request.message,
+            history=[
+                item.model_dump()
+                for item in request.history
+            ],
+            field_id=request.field_id,
+            evidence_summary=environmental_evidence_summary(
+                request.field_id
+            ),
+        )
+
+        return {
+            "answer": answer,
+            "field_id": request.field_id,
+        }
+
+    except RuntimeError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail="The chat assistant is unavailable or not configured.",
+        ) from exc
 
 @app.get("/api/v2/engine")
 def engine_info():
