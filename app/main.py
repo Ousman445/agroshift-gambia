@@ -31,6 +31,7 @@ app.add_middleware(
     allow_origins=[
         "https://remix-agroshift-gambia-8001.ai.studio",
         "https://agroshift.vercel.app",
+        "https://agroshiftgm.vercel.app",
     ],
     allow_credentials=False,
     allow_methods=["*"],
